@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+}
+.main{
+  background: #a1a1a1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer{
+  position:relative;
+  left: 130px;
+  width: 295px;
+  height: 600px;
+  border: 12px solid black;
+  border-radius: 45px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+}
+.inner-border{
+  width: 100%;
+  height: 100%;
+  background: url('https://leonardomazzone.com/wp-content/uploads/2018/07/cover_iphone_x.jpg') no-repeat;
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.notch{
+  width: 50%;
+  height: 5%;
+  background: black;
+  border-radius: 0px 0px 20px 20px;
+}
+.top-icons{
+    width: 70px;
+    height: 20px;
+    position: relative;
+    left: 76%;
+    top: -590px;
+    font-size: 12px;
+    color: white;
+}
+.icon-line{
+    width: 50%;
+    margin-top: 4px;
+    border: 1px solid;
+    border-bottom: 0;
+    margin-left: 15%;
+}
+.notch-details{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ear-speaker{
+  width: 30%;
+  height: 10%;
+  background: #2f2f2f;
+  border-radius: 15px;
+  display: inline-block;
+}
+.camera{
+  width: 10px;
+  height: 10px;background: rgb(14,37,122);
+background: -moz-radial-gradient(circle, rgba(14,37,122,1) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(14,37,122,1) 0%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, rgba(14,37,122,1) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e257a",endColorstr="#000000",GradientType=1);
+  border-radius: 15px;
+  display: inline-block;
+  position: relative;
+  left: 10%;
+}
+.display-details{
+  position: relative;
+  width: 100%;
+  background: transparent;
+  height: 400px;
+  top: -560px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+.lock{
+  font-size: 30px;
+  color: white;
+}
+.time{
+  font-weight: 100;
+  font-size: 60px;
+  color: white;
+}
+.date-details{
+  font-weight: 100;
+  color: white;
+}
+.foot-icons{
+  width: 100%;
+  position: relative;
+  top: -500px;
+  padding: 0px 25px;
+  height: 70px;
+  box-sizing: border-box;
+}
+.btn{
+  width: 40px;
+  color: white;
+  height: 40px;
+  font-size: 85%;
+  background: rgba(0,0,0,0.5);
+  border-radius: 80px;
+  border: 0px solid rgba(0,0,0,0.5);
+}
+.btn:focus{
+  outline: none;
+}
+.btn-right{
+  float: right;
+}
+.footline{
+  display: flex;
+  justify-content: center;
+}
+.foot-bar{
+  margin-top: 10%;
+  width: 50%;
+  border: 1px solid #999;
+}
+.outer{
+    position: relative;
+  z-index: 2;
+  animation: mymove 10s infinite;
+}
+@keyframes mymove {
+    0%   {
+      transform: scale(1);
+  }
+    25%  {
+      transform: scale(0.95);
+    }
+    50%{
+    transform: scale(1);
+  }
+    75%  {
+      transform: scale(0.95);
+  }
+    100% {
+      transform: scale(1);
+    }
+}
+.shadow{
+  position: relative;
+  top: 215px;
+  left: -50px;
+  width: 250px;
+  height: 150px;
+  background: #121212;
+  z-index: 1;
+  box-shadow: 00px 0px 15px 10px #121212;
+  border-radius: 30px;
+  transform: skewx(-50deg);
+  animation: shadowmove 10s infinite;
+}
+@keyframes shadowmove {
+    0%   {
+      transform: skewx(-50deg);
+  }
+    25%  {
+      transform: skewx(-56deg);
+    }
+    50%{
+    transform: skewx(-50deg);
+  }
+    75%  {
+      transform: skewx(-56deg);
+  }
+    100% {
+      transform: skewx(-50deg);
+    }
+}
